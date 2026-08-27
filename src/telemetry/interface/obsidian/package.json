@@ -1,0 +1,38 @@
+{
+    "name": "Khoj",
+    "version": "2.0.0-beta.28",
+    "description": "Your Second Brain",
+    "author": "Debanjum Singh Solanky, Saba Imran <team@khoj.dev>",
+    "license": "GPL-3.0-or-later",
+    "main": "src/main.js",
+    "scripts": {
+        "dev": "node esbuild.config.mjs",
+        "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+        "version": "node version-bump.mjs && git add manifest.json versions.json"
+    },
+    "keywords": [
+        "search",
+        "chat",
+        "AI",
+        "assistant",
+        "second brain"
+    ],
+    "devDependencies": {
+        "@types/dompurify": "3.2.0",
+        "@types/node": "^16.11.6",
+        "@typescript-eslint/eslint-plugin": "7.13.1",
+        "@typescript-eslint/parser": "7.13.1",
+        "builtin-modules": "3.3.0",
+        "esbuild": "0.14.47",
+        "obsidian": "^1.6.6",
+        "tslib": "2.4.0",
+        "typescript": "4.7.4"
+    },
+    "dependencies": {
+        "diff": "^8.0.3",
+        "isomorphic-dompurify": "^2.25.0"
+    },
+    "resolutions": {
+        "picomatch": ">=2.3.2"
+    }
+}
