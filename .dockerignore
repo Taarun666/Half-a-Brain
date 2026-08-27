@@ -1,0 +1,11 @@
+.*
+**/__pycache__/
+*.egg-info/
+documentation/
+tests/
+build/
+dist/
+scripts/
+src/interface/
+src/telemetry/
+!src/interface/web

@@ -1,0 +1,120 @@
+div.main {
+    height: 100%;
+    color: hsla(var(--foreground));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.suggestions {
+    overflow-x: none;
+    height: fit-content;
+    padding: 10px;
+    white-space: nowrap;
+    gap: 1rem;
+}
+
+div.inputBox {
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+input.inputBox {
+    border: none;
+}
+
+input.inputBox:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+div.inputBox:focus {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+div.chatBodyFull {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+button.inputBox {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: linear-gradient(var(--calm-green), var(--calm-blue));
+}
+
+div.chatBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.inputBox {
+    color: hsla(var(--foreground));
+}
+
+div.chatLayout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+div.chatBox {
+    display: grid;
+}
+
+div.titleBar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+div.chatBoxBody {
+    display: grid;
+    height: 100%;
+    margin: auto;
+}
+
+div.homeGreetings {
+    display: grid;
+    height: 100%;
+    margin: auto;
+    grid-template-rows: 1fr 2fr;
+}
+
+@media screen and (max-width: 768px) {
+    div.chatBody {
+        grid-template-columns: 0fr 1fr;
+    }
+
+    div.chatBoxBody {
+        width: 100%;
+        grid-template-rows: auto;
+    }
+
+    div.chatBox {
+        padding: 0;
+        height: 100%;
+    }
+
+    div.chatLayout {
+        gap: 0;
+        display: flex;
+        height: 100%;
+    }
+
+    div.homeGreetings {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.inputBox {
+        margin-bottom: 0;
+        height: fit-content;
+        align-items: flex-end;
+        margin-top: auto;
+    }
+}

@@ -1,0 +1,15 @@
+.card {
+    border-radius: 0.5rem;
+}
+
+.title {
+    font-size: 1rem;
+}
+
+.text {
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+    white-space: wrap;
+    padding-right: 4px;
+    color: black;
+}

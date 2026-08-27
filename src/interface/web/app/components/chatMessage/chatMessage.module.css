@@ -1,0 +1,390 @@
+div.chatMessageContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    border-radius: 16px;
+    padding: 8px 16px 0 16px;
+    word-break: break-word;
+}
+
+div.chatMessageWrapper {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+div.chatMessageWrapper ol,
+div.chatMessageWrapper ul,
+div.chatMessageWrapper p:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+/* Override some link styling by Katex to improve rendering */
+div.chatMessageWrapper a span {
+    display: revert !important;
+}
+
+/* File link styling */
+.chatMessageWrapper a.file-link {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.chatMessageWrapper a.file-link:hover {
+    color: hsl(var(--primary-foreground));
+    background-color: hsl(var(--primary));
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Table styling */
+.chatMessageWrapper table {
+    border-collapse: collapse;
+    border: 1px solid hsl(var(--border));
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.chatMessageWrapper table th,
+.chatMessageWrapper table td {
+    border: 1px solid hsl(var(--border));
+    padding: 8px 12px;
+    text-align: left;
+    min-width: 120px;
+}
+
+.chatMessageWrapper table th {
+    background-color: hsl(var(--muted));
+    font-weight: 600;
+}
+
+/* Alternating row colors for better readability */
+.chatMessageWrapper table tbody tr:nth-child(even) {
+    background-color: hsl(var(--muted) / 0.3);
+}
+
+.chatMessageWrapper table tbody tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+/* Hover effect for table rows */
+.chatMessageWrapper table tbody tr:hover {
+    background-color: hsl(var(--muted) / 0.5);
+}
+
+div.khojfullHistory {
+    padding-left: 4px;
+}
+
+div.youfullHistory {
+    max-width: 100%;
+}
+
+div.chatMessageContainer.youfullHistory {
+    padding-left: 0px;
+}
+
+div.you {
+    background-color: hsla(var(--secondary));
+    align-self: flex-end;
+    border-radius: 16px;
+}
+
+div.khoj {
+    background-color: transparent;
+    color: hsl(var(--accent-foreground));
+    align-self: flex-start;
+}
+
+div.khojChatMessage {
+    padding-top: 8px;
+    padding-left: 16px;
+}
+
+div.emptyChatMessage {
+    display: none;
+}
+
+div.imagesContainer {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+div.imageWrapper {
+    flex: 0 0 auto;
+    margin-right: 8px;
+}
+
+div.imageWrapper img {
+    width: auto;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+div.khoj div.imageWrapper img {
+    max-height: 512px;
+    height: auto;
+    object-fit: contain;
+}
+
+div.khoj div.imageWrapper {
+    flex: 1 1 auto;
+}
+
+div.khoj div.imagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+div.chatMessageContainer > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+    margin-top: 0.25rem;
+    margin-right: auto;
+}
+
+div.chatMessageContainer h3 img {
+    width: 24px;
+}
+
+div.you {
+    color: hsla(var(--secondary-foreground));
+}
+
+div.author {
+    font-size: 0.75rem;
+    color: #808080;
+    text-align: right;
+}
+
+div.chatFooter {
+    display: flex;
+    justify-content: space-between;
+    min-height: 28px;
+}
+
+div.chatButtons {
+    display: flex;
+    justify-content: flex-end;
+    width: min-content;
+    border: var(--border-color) 1px solid;
+    border-radius: 16px;
+    position: relative;
+    bottom: -12px;
+    background-color: hsla(var(--secondary));
+}
+
+div.chatFooter button {
+    cursor: pointer;
+    color: hsl(var(--muted-foreground));
+    border: none;
+    border-radius: 16px;
+    padding: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+div.chatFooter button:hover {
+    background-color: hsla(var(--frosted-background-color));
+}
+
+button.codeCopyButton {
+    cursor: pointer;
+    float: right;
+    border-radius: 8px;
+}
+
+button.codeCopyButton:hover {
+    color: hsla(var(--frosted-background-color));
+}
+
+div.feedbackButtons img,
+button.codeCopyButton img,
+button.copyButton img,
+button.retryButton img {
+    width: 24px;
+}
+
+div.trainOfThought strong {
+    font-weight: 500;
+}
+
+div.trainOfThought.primary strong {
+    font-weight: 500;
+    color: hsla(var(--secondary-foreground));
+}
+
+div.trainOfThought.primary p {
+    color: inherit;
+}
+
+div.trainOfThoughtElement {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+}
+
+div.trainOfThoughtElement ol,
+div.trainOfThoughtElement ul {
+    margin: auto;
+    word-break: break-word;
+}
+
+@media screen and (max-width: 768px) {
+    div.youfullHistory {
+        max-width: 90%;
+    }
+
+    div.khoj div.imageWrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    .chatMessageWrapper table th,
+    .chatMessageWrapper table td {
+        min-width: 40px;
+    }
+}
+
+/* Print-specific styles for chat messages */
+@media print {
+    div.chatMessageContainer {
+        background: transparent !important;
+        border: 1px solid #ccc !important;
+        border-radius: 8px !important;
+        margin: 0.5rem 0 !important;
+        padding: 0.5rem !important;
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    div.chatMessageContainer.you {
+        margin: 1rem 0 0 0 !important;
+        background: transparent !important;
+        border: none !important;
+    }
+
+    div.chatMessageContainer.khoj {
+        margin: 0 !important;
+    }
+
+    div.chatMessageWrapper {
+        padding-left: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    div.you div.chatMessageWrapper {
+        padding: 0 !important;
+    }
+
+    div.you {
+        background-color: transparent !important;
+        color: #000 !important;
+        font-size: 16pt !important;
+        font-weight: 500 !important;
+        padding: 0.8rem 0 0.1rem 0 !important;
+        align-self: flex-start !important;
+        text-align: left !important;
+    }
+
+    div.khoj {
+        background-color: transparent !important;
+        color: #000 !important;
+        width: 100% !important;
+        max-width: none !important;
+        align-self: stretch !important;
+    }
+
+    div.youfullHistory,
+    div.khojfullHistory {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    div.author {
+        color: #666 !important;
+        font-size: 0.7rem !important;
+    }
+
+    /* Add timestamp as divider between title and body */
+    div.you.chatMessageContainer::after {
+        content: "🕐 " attr(data-created) !important;
+        display: block !important;
+        color: #888 !important;
+        font-size: 9pt !important;
+        font-weight: normal !important;
+        margin: 0.2rem 0 0.6rem 0 !important;
+        padding-bottom: 0.4rem !important;
+    }
+
+    /* Hide interactive elements */
+    div.chatFooter,
+    div.chatButtons,
+    button.codeCopyButton,
+    button.copyButton,
+    button.retryButton,
+    div.feedbackButtons {
+        display: none !important;
+    }
+
+    /* Image styling for print */
+    div.imagesContainer {
+        display: block !important;
+        overflow: visible !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    div.imageWrapper {
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    div.imageWrapper img,
+    div.khoj div.imageWrapper img {
+        width: auto !important;
+        height: auto !important;
+        max-width: 100% !important;
+        max-height: 4in !important;
+        object-fit: contain !important;
+        page-break-inside: avoid;
+    }
+
+    /* Train of thought styling for print */
+    div.trainOfThought {
+        border-left: 2px solid #ccc !important;
+        margin: 0.5rem 0 !important;
+        padding: 0.5rem !important;
+        font-size: 0.9em !important;
+        color: #666 !important;
+    }
+
+    div.trainOfThought strong {
+        color: #000 !important;
+    }
+
+    div.trainOfThought.primary {
+        border-left-color: #000 !important;
+    }
+
+    div.trainOfThought.primary strong {
+        color: #000 !important;
+    }
+
+    div.trainOfThoughtElement {
+        display: block !important;
+        margin-bottom: 0.5rem !important;
+    }
+}

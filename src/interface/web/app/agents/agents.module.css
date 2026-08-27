@@ -1,0 +1,55 @@
+div.titleBar {
+    padding: 16px 0;
+    text-align: left;
+}
+
+.agentPersonality p {
+    white-space: inherit;
+    overflow: hidden;
+    height: 77px;
+    line-height: 1.5;
+}
+
+div.agentPersonality {
+    text-align: left;
+    grid-column: span 3;
+    overflow: hidden;
+}
+
+div.pageLayout {
+    max-width: 60vw;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+button.infoButton {
+    border: none;
+    background-color: transparent !important;
+    text-align: left;
+    font-family: inherit;
+    font-size: medium;
+}
+
+div.agentList {
+    display: grid;
+    gap: 20px;
+    padding-top: 30px;
+    margin-right: auto;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    div.agentList {
+        width: 100%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        grid-template-columns: 1fr;
+    }
+
+    div.pageLayout {
+        max-width: 90vw;
+    }
+}
