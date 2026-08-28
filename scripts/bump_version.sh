@@ -10,7 +10,7 @@ do
             prerelease_type=$OPTARG 
 
             # Get the current version from web package.json to determine base version
-            cd $project_root/src/interface/web
+            cd $project_root/src/interface/web 
             current_base_version=$(grep '"version":' package.json | awk -F '"' '{print $4}')
 
             # Extract base version (remove any existing pre-release suffix)
