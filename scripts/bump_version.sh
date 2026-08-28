@@ -7,7 +7,7 @@ do
     case "${opt}" in
         p)
             # Create pre-release SemVer version. Options: alpha, beta, rc
-            prerelease_type=$OPTARG
+            prerelease_type=$OPTARG 
 
             # Get the current version from web package.json to determine base version
             cd $project_root/src/interface/web
