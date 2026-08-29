@@ -6,7 +6,7 @@ while getopts 'nc:t:p:' opt;
 do  
     case "${opt}" in 
         p) 
-            # Create pre-release SemVer version. Options: alpha, beta, rc
+            # Create pre-release SemVer version. Options: alpha, beta, rc 
             prerelease_type=$OPTARG   
   
             # Get the current version from web package.json to determine base version 
