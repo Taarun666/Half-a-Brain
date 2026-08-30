@@ -9,7 +9,7 @@ for arg in "$@"
 do  
     if [ "$arg" = "--full" ]
     then  
-        INSTALL_FULL=true  
+        INSTALL_FULL=true   
     fi  
     if [ "$arg" = "--devcontainer" ] 
     then 
