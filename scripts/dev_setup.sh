@@ -11,7 +11,7 @@ do
     then  
         INSTALL_FULL=true 
     fi  
-    if [ "$arg" = "--devcontainer" ]
+    if [ "$arg" = "--devcontainer" ] 
     then 
         DEVCONTAINER=true
     fi
