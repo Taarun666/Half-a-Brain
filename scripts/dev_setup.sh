@@ -13,7 +13,7 @@ do
     fi  
     if [ "$arg" = "--devcontainer" ] 
     then 
-        DEVCONTAINER=true
+        DEVCONTAINER=true 
     fi
 done 
 
