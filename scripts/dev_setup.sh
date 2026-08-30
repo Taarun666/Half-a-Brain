@@ -10,7 +10,7 @@ do
     if [ "$arg" = "--full" ]
     then  
         INSTALL_FULL=true 
-    fi 
+    fi  
     if [ "$arg" = "--devcontainer" ]
     then 
         DEVCONTAINER=true
