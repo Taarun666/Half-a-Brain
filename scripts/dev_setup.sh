@@ -6,7 +6,7 @@ PROJECT_ROOT=$(git rev-parse --show-toplevel)
 INSTALL_FULL=false 
 DEVCONTAINER=false  
 for arg in "$@"
-do 
+do  
     if [ "$arg" = "--full" ]
     then  
         INSTALL_FULL=true 
