@@ -15,7 +15,7 @@ do
     then 
         DEVCONTAINER=true
     fi
-done
+done 
 
 if [ "$DEVCONTAINER" = true ]; then
     echo "Dev container setup - using pre-installed dependencies..."
