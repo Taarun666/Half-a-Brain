@@ -16,7 +16,7 @@ do
         DEVCONTAINER=true  
     fi
 done  
-
+ 
 if [ "$DEVCONTAINER" = true ]; then
     echo "Dev container setup - using pre-installed dependencies..."
     cd "$PROJECT_ROOT"
