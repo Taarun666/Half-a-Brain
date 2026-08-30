@@ -71,7 +71,7 @@ fi
 # Install Desktop App
 # ---
 if [ "$INSTALL_FULL" = true ] ; then
-    echo "Installing Desktop App..."
+    echo "Installing Desktop App..." 
     cd $PROJECT_ROOT/src/interface/desktop
     yarn install
 fi
