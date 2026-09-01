@@ -8,7 +8,7 @@ DEVCONTAINER=false
 for arg in "$@"
 do   
     if [ "$arg" = "--full" ]
-    then  
+    then   
         INSTALL_FULL=true    
     fi  
     if [ "$arg" = "--devcontainer" ] 
