@@ -4,7 +4,7 @@ PROJECT_ROOT=$(git rev-parse --show-toplevel)
 
 # Default to minimal installation unless --full flag passed
 INSTALL_FULL=false  
-DEVCONTAINER=false    
+DEVCONTAINER=false     
 for arg in "$@"
 do   
     if [ "$arg" = "--full" ]
