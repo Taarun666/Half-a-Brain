@@ -22,7 +22,7 @@ do
                 current_num=$(echo $current_base_version | sed "s/.*-$prerelease_type\.//" | sed 's/[^0-9]*$//')
                 next_num=$((current_num + 1))
                 current_version="$base_version-$prerelease_type.$next_num"
-            else
+            else 
                 # If base version is 1.x.x, bump to 2.0.0-prerelease.1
                 if [[ $base_version == 1.* ]]; then
                     current_version="2.0.0-$prerelease_type.1"
