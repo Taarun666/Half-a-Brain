@@ -47,7 +47,7 @@ do
             # append current version, min Obsidian app version from manifest to versions json
             cp $project_root/versions.json .
             yarn run version  # run Obsidian version script
-
+ 
             # Bump Emacs package to pre-release version
             cd ../emacs
             sed -E -i.bak "s/^;; Version: (.*)/;; Version: $current_version/" khoj.el
