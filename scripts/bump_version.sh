@@ -2,7 +2,7 @@
 
 project_root=$PWD
 
-while getopts 'nc:t:p:' opt;
+while getopts 'nc:t:p:' opt; 
 do  
     case "${opt}" in  
         p) 
