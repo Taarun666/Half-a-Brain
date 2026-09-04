@@ -3,7 +3,7 @@
 project_root=$PWD
 
 while getopts 'nc:t:p:' opt; 
-do  
+do   
     case "${opt}" in  
         p)  
             # Create pre-release SemVer version. Options: alpha, beta, rc 
