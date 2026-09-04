@@ -86,7 +86,7 @@ do
 
             # Bump Desktop app to current version
             cd $project_root/src/interface/desktop
-            yarn version --$version_type --no-git-tag-version
+            yarn version --$version_type --no-git-tag-version 
 
             # Get bumped project version
             current_version=$(grep '"version":' package.json | awk -F '"' '{print $4}')
