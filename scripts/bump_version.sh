@@ -54,7 +54,7 @@ do
             git add khoj.el
             rm *.bak
 
-            # Copy current obsidian versioned files to project root
+            # Copy current obsidian versioned files to project root 
             cd $project_root
             cp src/interface/obsidian/versions.json .
             cp src/interface/obsidian/manifest.json .
