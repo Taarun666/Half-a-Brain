@@ -17,7 +17,7 @@ do
             base_version=$(echo $current_base_version | sed 's/-.*$//')
   
             # If current version is already 2.x.x, increment the pre-release number
-            if [[ $current_base_version == *"-$prerelease_type"* ]]; then
+            if [[ $current_base_version == *"-$prerelease_type"* ]]; then 
                 # Extract current pre-release number and increment
                 current_num=$(echo $current_base_version | sed "s/.*-$prerelease_type\.//" | sed 's/[^0-9]*$//')
                 next_num=$((current_num + 1))
