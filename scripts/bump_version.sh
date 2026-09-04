@@ -35,7 +35,7 @@ do
             # Bump Web app to pre-release version
             cd $project_root/src/interface/web
             yarn version --new-version $current_version --no-git-tag-version
-
+ 
             # Bump Desktop app to pre-release version
             cd $project_root/src/interface/desktop
             yarn version --new-version $current_version --no-git-tag-version
