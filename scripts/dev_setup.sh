@@ -1,7 +1,7 @@
 # Initialize the development environment for the project
 # ---
 PROJECT_ROOT=$(git rev-parse --show-toplevel)
-
+ 
 # Default to minimal installation unless --full flag passed
 INSTALL_FULL=false  
 DEVCONTAINER=false     
