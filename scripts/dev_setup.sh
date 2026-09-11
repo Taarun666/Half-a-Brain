@@ -40,7 +40,7 @@ else
     echo "Installing Server App..."
     cd "$PROJECT_ROOT"
     if command -v uv &> /dev/null
-    then
+    then 
         uv venv
         uv sync --all-extras
     else
