@@ -7,7 +7,7 @@ INSTALL_FULL=false
 DEVCONTAINER=false      
 for arg in "$@"   
 do      
-    if [ "$arg" = "--full" ] 
+    if [ "$arg" = "--full" ]  
     then    
         INSTALL_FULL=true     
     fi    
