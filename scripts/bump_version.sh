@@ -51,7 +51,7 @@ do
             # Bump Emacs package to pre-release version
             cd ../emacs
             sed -E -i.bak "s/^;; Version: (.*)/;; Version: $current_version/" khoj.el
-            git add khoj.el
+            git add khoj.el 
             rm *.bak
 
             # Copy current obsidian versioned files to project root 
