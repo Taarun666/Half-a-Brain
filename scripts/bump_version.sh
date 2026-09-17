@@ -53,7 +53,7 @@ do
             sed -E -i.bak "s/^;; Version: (.*)/;; Version: $current_version/" khoj.el
             git add khoj.el 
             rm *.bak
-
+ 
             # Copy current obsidian versioned files to project root 
             cd $project_root
             cp src/interface/obsidian/versions.json .
