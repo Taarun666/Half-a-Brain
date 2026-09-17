@@ -65,7 +65,7 @@ do
             # Commit changes and tag commit for pre-release
             git add \
                 $project_root/src/interface/web/package.json \
-                $project_root/src/interface/desktop/package.json \
+                $project_root/src/interface/desktop/package.json \ 
                 $project_root/src/interface/obsidian/package.json \
                 $project_root/src/interface/obsidian/yarn.lock \
                 $project_root/src/interface/obsidian/manifest.json \
