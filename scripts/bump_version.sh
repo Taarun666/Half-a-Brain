@@ -26,7 +26,7 @@ do
                 # If base version is 1.x.x, bump to 2.0.0-prerelease.1
                 if [[ $base_version == 1.* ]]; then
                     current_version="2.0.0-$prerelease_type.1"
-                else
+                else 
                     # Otherwise add pre-release to current base version
                     current_version="$base_version-$prerelease_type.1"
                 fi
