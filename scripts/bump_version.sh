@@ -39,7 +39,7 @@ do
             # Bump Desktop app to pre-release version
             cd $project_root/src/interface/desktop
             yarn version --new-version $current_version --no-git-tag-version
-
+ 
             # Bump Obsidian plugin to pre-release version 
             cd $project_root/src/interface/obsidian
             yarn build # verify build before bumping version
