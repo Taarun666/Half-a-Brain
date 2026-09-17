@@ -72,7 +72,7 @@ do
                 $project_root/src/interface/obsidian/versions.json \
                 $project_root/src/interface/emacs/khoj.el \
                 $project_root/manifest.json \
-                $project_root/versions.json
+                $project_root/versions.json 
             git commit -m "Release Khoj version $current_version"
             git tag $current_version
             ;;
