@@ -70,7 +70,7 @@ do
                 $project_root/src/interface/obsidian/yarn.lock \
                 $project_root/src/interface/obsidian/manifest.json \
                 $project_root/src/interface/obsidian/versions.json \
-                $project_root/src/interface/emacs/khoj.el \
+                $project_root/src/interface/emacs/khoj.el \ 
                 $project_root/manifest.json \
                 $project_root/versions.json 
             git commit -m "Release Khoj version $current_version"
