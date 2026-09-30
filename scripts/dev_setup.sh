@@ -20,7 +20,7 @@ done
 if [ "$DEVCONTAINER" = true ]; then
     echo "Dev container setup - using pre-installed dependencies..."
     cd "$PROJECT_ROOT"
-
+ 
     # Use devcontainer launch.json
     mkdir -p .vscode && cp .devcontainer/launch.json .vscode/launch.json
 
