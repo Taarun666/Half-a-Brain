@@ -54,7 +54,7 @@ else
     then
         echo "using Bun."
         bun install && bun run export
-    else
+    else 
         echo "using Yarn." 
         yarn install && yarn export
     fi
