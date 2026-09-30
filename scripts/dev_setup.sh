@@ -24,7 +24,7 @@ if [ "$DEVCONTAINER" = true ]; then
     # Use devcontainer launch.json
     mkdir -p .vscode && cp .devcontainer/launch.json .vscode/launch.json
 
-    # Install Server App using pre-installed dependencies
+    # Install Server App using pre-installed dependencies 
     echo "Setup Server App with UV. Use pre-installed dependencies in $UV_PROJECT_ENVIRONMENT."
     sed -i "s/dynamic = \\[\"version\"\\]/version = \"$VERSION\"/" pyproject.toml
     cp /opt/uv.lock.linux uv.lock
