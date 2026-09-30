@@ -27,7 +27,7 @@ if [ "$DEVCONTAINER" = true ]; then
     # Install Server App using pre-installed dependencies 
     echo "Setup Server App with UV. Use pre-installed dependencies in $UV_PROJECT_ENVIRONMENT."
     sed -i "s/dynamic = \\[\"version\"\\]/version = \"$VERSION\"/" pyproject.toml
-    cp /opt/uv.lock.linux uv.lock
+    cp /opt/uv.lock.linux uv.lock 
     uv sync --all-extras
 
     # Install Web App using cached dependencies
