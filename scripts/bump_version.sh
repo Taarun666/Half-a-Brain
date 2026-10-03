@@ -62,7 +62,7 @@ do
             # Run pre-commit validation to fix jsons
             pre-commit run --hook-stage manual --all
 
-            # Commit changes and tag commit for pre-release
+            # Commit changes and tag commit for pre-release 
             git add \
                 $project_root/src/interface/web/package.json \
                 $project_root/src/interface/desktop/package.json \ 
