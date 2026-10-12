@@ -57,7 +57,7 @@ else
     else 
         echo "using Yarn." 
         yarn install && yarn export
-    fi
+    fi 
 fi
 
 # Install Obsidian App
