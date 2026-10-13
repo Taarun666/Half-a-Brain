@@ -50,7 +50,7 @@ do
   
             # Bump Emacs package to pre-release version
             cd ../emacs
-            sed -E -i.bak "s/^;; Version: (.*)/;; Version: $current_version/" khoj.el
+            sed -E -i.bak "s/^;; Version: (.*)/;; Version: $current_version/" khoj.el 
             git add khoj.el 
             rm *.bak
  
