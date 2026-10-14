@@ -14,7 +14,7 @@ do
     if [ "$arg" = "--devcontainer" ]   
     then    
         DEVCONTAINER=true    
-    fi
+    fi 
 done   
  
 if [ "$DEVCONTAINER" = true ]; then
