@@ -29,7 +29,7 @@ do
                 else 
                     # Otherwise add pre-release to current base version 
                     current_version="$base_version-$prerelease_type.1"
-                fi
+                fi 
             fi
 
             # Bump Web app to pre-release version
