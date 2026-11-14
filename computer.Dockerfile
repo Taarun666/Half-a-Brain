@@ -20,7 +20,7 @@ RUN apt update \
         python3-dev \
         build-essential \ 
         scrot \
-        gnome-screenshot \
+        gnome-screenshot \ 
         net-tools \ 
         libx11-dev \
         libxext-dev \
