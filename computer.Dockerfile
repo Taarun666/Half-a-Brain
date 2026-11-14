@@ -10,7 +10,7 @@ RUN apt update \
         xfce4-goodies \
         x11vnc \
         xvfb \
-        xdotool \
+        xdotool \ 
         imagemagick \
         x11-apps \
         dbus-x11 \
