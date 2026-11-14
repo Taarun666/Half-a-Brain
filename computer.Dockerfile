@@ -21,7 +21,7 @@ RUN apt update \
         build-essential \
         scrot \
         gnome-screenshot \
-        net-tools \
+        net-tools \ 
         libx11-dev \
         libxext-dev \
         libxtst-dev \
