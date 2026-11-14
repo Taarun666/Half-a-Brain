@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update \
     && apt install -y \
         ca-certificates \
-        gnupg \
+        gnupg \ 
         xfce4 \
         xfce4-goodies \
         x11vnc \
