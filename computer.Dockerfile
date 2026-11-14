@@ -84,7 +84,7 @@ WORKDIR $HOME
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 ENV PYTHON_VERSION=3.11.6
 RUN uv python pin $PYTHON_VERSION
-RUN uv venv $HOME/.venv --python $PYTHON_VERSION --seed
+RUN uv venv $HOME/.venv --python $PYTHON_VERSION --seed 
 RUN echo 'export PATH="$HOME/.venv/bin:$PATH"' >> "$HOME/.bashrc"
 ENV PATH="$HOME/.venv/bin:$PATH"
 
