@@ -18,7 +18,7 @@ RUN apt update \
         python3-pip \
         python3-tk \
         python3-dev \
-        build-essential \
+        build-essential \ 
         scrot \
         gnome-screenshot \
         net-tools \ 
