@@ -14,7 +14,7 @@ RUN apt update \
         imagemagick \
         x11-apps \ 
         dbus-x11 \
-        sudo \
+        sudo \ 
         python3-pip \
         python3-tk \
         python3-dev \
