@@ -12,7 +12,7 @@ RUN apt update \
         xvfb \
         xdotool \ 
         imagemagick \
-        x11-apps \
+        x11-apps \ 
         dbus-x11 \
         sudo \
         python3-pip \
