@@ -57,7 +57,7 @@ services:
     working_dir: /app
     volumes:
       - khoj_config:/root/.khoj/
-      - khoj_models:/root/.cache/torch/sentence_transformers
+      - khoj_models:/root/.cache/torch/sentence_transformers 
       - khoj_models:/root/.cache/huggingface
       # uncomment line below to mount docker socket to allow khoj to use its computer.  
       # - /var/run/docker.sock:/var/run/docker.sock
@@ -125,7 +125,7 @@ services:
     command: --host="0.0.0.0" --port=42110 -vv --anonymous-mode --non-interactive
 
 volumes:
-  khoj_config:
+  khoj_config: 
   khoj_db:
   khoj_models:
   khoj_search:
