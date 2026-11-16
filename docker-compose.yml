@@ -9,7 +9,7 @@ services:
       - khoj_db:/var/lib/postgresql/data/
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 30s
+      interval: 30s 
       timeout: 10s
       retries: 5
   sandbox:
