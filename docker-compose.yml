@@ -6,7 +6,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     volumes:
-      - khoj_db:/var/lib/postgresql/data/
+      - khoj_db:/var/lib/postgresql/data/ 
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 30s 
