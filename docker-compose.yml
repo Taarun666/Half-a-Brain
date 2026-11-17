@@ -52,7 +52,7 @@ services:
       #   change the port in the args in the build section,
       #   as well as the port in the command section to match
       - "42110:42110"
-    extra_hosts:
+    extra_hosts: 
       - "host.docker.internal:host-gateway"
     working_dir: /app
     volumes:
