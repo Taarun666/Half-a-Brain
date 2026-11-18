@@ -13,5 +13,5 @@ keep_alive = int(os.environ.get("GUNICORN_KEEP_ALIVE", 60))
 
 # Logging Configuration  
 accesslog = "-" 
-errorlog = "-"
+errorlog = "-" 
 loglevel = "debug"
