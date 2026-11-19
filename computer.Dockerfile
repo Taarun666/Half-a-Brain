@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install System Dependencies
 RUN apt update \
-    && apt install -y \
+    && apt install -y \ 
         ca-certificates \
         gnupg \ 
         xfce4 \
