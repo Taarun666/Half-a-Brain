@@ -7,7 +7,7 @@ RUN apt update \
         ca-certificates \
         gnupg \ 
         xfce4 \
-        xfce4-goodies \
+        xfce4-goodies \ 
         x11vnc \
         xvfb \
         xdotool \   
